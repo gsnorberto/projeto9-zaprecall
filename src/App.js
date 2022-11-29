@@ -1,11 +1,14 @@
-
-
+import FlashCards from './components/FlashCards';
+import Counter from './components/Counter'; 
+import Logo from './components/Logo';
 
 function App() {
   return (
-    <div className="App">
-      App
-    </div>
+    <>
+      <Logo />
+      <FlashCards />
+      <Counter />
+    </>
   );
 }
 
