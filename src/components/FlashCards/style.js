@@ -1,17 +1,37 @@
 import styled from "styled-components";
 
 export const FlashCardsArea = styled.div`
-    padding-top:  140px;
+    padding-top:  150px;
     padding-bottom: 70px;
     background-color: #FB6B6B;
     width: 100vw;
     height: 100vh;
-    overflow-x: scroll;
+    
 `
 
 export const Container = styled.div`
-    font-family: 'Recursive', sans-serif;
+    font-family: 'Recursive';
     max-width: 1170px;
+    height: 100%;
     margin: 0 auto;
+    color: #333333;
+    font-size: 16px;
+    font-weight: Bold;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
     
+    
+    &::-webkit-scrollbar {
+        width: 12px;               /* width of the entire scrollbar */
+    }
+    &::-webkit-scrollbar-track {
+        background: #FFFFFF;        /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #FB6B6E;    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+        border: 3px solid #FFFFFF;  /* creates padding around scroll thumb */
+    }
 `

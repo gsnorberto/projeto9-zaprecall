@@ -12,10 +12,18 @@ export const FlashCardArea = styled.div`
     border-radius: 5px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     margin-bottom: 25px;
+    
+    
+    
 `
 export const Title = styled.div`
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `
 export const Button = styled.img`
-    
+    cursor: pointer;
 `

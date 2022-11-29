@@ -9,6 +9,7 @@ export const LogoArea = styled.div`
     background-color: #FB6B6B;
     color: #FFFFFF;
     position: fixed;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
 `
 
 export const Image = styled.img`
