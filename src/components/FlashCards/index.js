@@ -4,7 +4,7 @@ import FlashCard from "./FlashCard";
 import cards from "../../cards";
 
 export default () => {
-    const [cardState, setCardState] = useState('answer'); // initial, question or answer
+    const [turnedQuestion, setTurnedQuestion] = useState(0); // 0 = no question turned
 
     return (
         <FlashCardsArea>
@@ -14,7 +14,8 @@ export default () => {
                         question={card.question}
                         answer={card.answer}
                         number={i}
-                        cardState={cardState}
+                        turnedQuestion={turnedQuestion}
+                        setTurnedQuestion={setTurnedQuestion}
                     />
                 ))}
             </Container>

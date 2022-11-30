@@ -12,6 +12,7 @@ export const InitialState = styled.div`
     border-radius: 5px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     margin-bottom: 25px;
+    cursor: pointer;
 
     .title{
         display: flex;
@@ -21,11 +22,12 @@ export const InitialState = styled.div`
         overflow: hidden;
         text-overflow: ellipsis;
     }
-
-    img.button{
-        cursor: pointer;
-    }
 `
+
+export const CardContent = styled.div`
+
+`
+
 export const QuestionState = styled.div`
     position: relative;
     width: 80%;
