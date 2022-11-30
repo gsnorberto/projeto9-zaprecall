@@ -22,6 +22,24 @@ export const InitialState = styled.div`
         overflow: hidden;
         text-overflow: ellipsis;
     }
+
+    &.greenAnswer{
+        color: #2FBE34;
+        text-decoration: line-through;
+        cursor: default;
+    }
+
+    &.redAnswer{
+        color: #FF3030;
+        text-decoration: line-through;
+        cursor: default;
+    }
+
+    &.yellowAnswer{
+        color: #FF922E;
+        text-decoration: line-through;
+        cursor: default;
+    }
 `
 
 export const CardContent = styled.div`

@@ -1,9 +1,10 @@
 import { CounterArea, Description } from "./style"
+import cards from "../../cards";
 
-export default () => {
+export default ({questionsAnswered}) => {
     return(
         <CounterArea>
-            <Description>0/4 CONCLUÍDOS</Description>
+            <Description>{questionsAnswered}/{cards.length} CONCLUÍDOS</Description>
         </CounterArea>
     )
 }
