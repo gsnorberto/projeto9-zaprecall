@@ -17,21 +17,20 @@ export const Container = styled.div`
     color: #333333;
     font-size: 16px;
     font-weight: Bold;
-
     overflow-y: scroll;
     overflow-x: hidden;
-    
     
     &::-webkit-scrollbar {
         width: 12px;               /* width of the entire scrollbar */
     }
     &::-webkit-scrollbar-track {
-        background: #FFFFFF;        /* color of the tracking area */
+        background: #FB6B6E;        /* color of the tracking area */
     }
 
     &::-webkit-scrollbar-thumb {
-        background-color: #FB6B6E;    /* color of the scroll thumb */
+        background-color: #FFFFFF;    /* color of the scroll thumb */
         border-radius: 20px;       /* roundness of the scroll thumb */
-        border: 3px solid #FFFFFF;  /* creates padding around scroll thumb */
+        border: 3px solid #FB6B6E;  /* creates padding around scroll thumb */
+        
     }
 `
