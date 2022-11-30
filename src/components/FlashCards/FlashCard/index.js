@@ -2,12 +2,13 @@ import { InitialState, QuestionState, AnswerState, CardContent } from "./style"
 
 import { useState } from "react";
 
-export default ({ number, question, answer, turnedQuestion, setTurnedQuestion }) => {
+export default ({ number, question, answer, turnedQuestion, setTurnedQuestion, setQuestionsAnswered, questionsAnswered }) => {
     const [cardResponse, setCardResponse] = useState(false); //question or answer
     const [cardColor, setCardColor] = useState(''); //question or answer
     const [iconName, seticonName] = useState('seta_play.png');
 
     function disableCard  (color) {
+        setQuestionsAnswered(questionsAnswered+1);
         setTurnedQuestion(0);
         setCardColor(color);
         if(color == 'redAnswer') seticonName('icone_erro.png');

@@ -3,7 +3,7 @@ import { Container, FlashCardsArea } from "./style"
 import FlashCard from "./FlashCard";
 import cards from "../../cards";
 
-export default () => {
+export default ({questionsAnswered, setQuestionsAnswered}) => {
     const [turnedQuestion, setTurnedQuestion] = useState(0); // 0 = no question turned
 
     return (
@@ -16,6 +16,8 @@ export default () => {
                         number={i}
                         turnedQuestion={turnedQuestion}
                         setTurnedQuestion={setTurnedQuestion}
+                        questionsAnswered={questionsAnswered}
+                        setQuestionsAnswered={setQuestionsAnswered}
                     />
                 ))}
             </Container>

@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Logo />
-      <FlashCards setQuestionsAnswered={setQuestionsAnswered} />
+      <FlashCards setQuestionsAnswered={setQuestionsAnswered} questionsAnswered={questionsAnswered}/>
       <Counter questionsAnswered={questionsAnswered} />
     </>
   );
