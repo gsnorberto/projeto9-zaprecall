@@ -15,10 +15,8 @@ export const InitialState = styled.div`
     cursor: pointer;
 
     .title{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
         width: 80%;
+        min-height: 18px;
         overflow: hidden;
         text-overflow: ellipsis;
     }

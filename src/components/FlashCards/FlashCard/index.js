@@ -47,7 +47,7 @@ export default ({ number, question, answer, turnedQuestion, setTurnedQuestion, s
                 </CardContent>
                 :
                 <InitialState className={cardColor} onClick={() => cardColor == '' ? setTurnedQuestion(number + 1): ''}>
-                    <div className="title">Questão {number + 1}</div>
+                    <div className="title">Pergunta {number + 1}</div>
                     <img className="button" src={`./assets/img/${iconName}`} />
                 </InitialState>
             }
