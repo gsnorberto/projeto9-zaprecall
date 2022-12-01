@@ -2,7 +2,7 @@ import { InitialState, QuestionState, AnswerState, CardContent } from "./style"
 
 import { useState } from "react";
 
-export default ({ number, question, answer, turnedQuestion, setTurnedQuestion, setQuestionsAnswered, questionsAnswered }) => {
+export default ({ number, question, answer, turnedQuestion, setTurnedQuestion, setQuestionsAnswered, questionsAnswered, orderOfQuestions, setOrderOfQuestions }) => {
     const [cardResponse, setCardResponse] = useState(false); //question or answer
     const [cardColor, setCardColor] = useState(''); //question or answer
     const [iconName, seticonName] = useState('seta_play.png');
@@ -11,9 +11,19 @@ export default ({ number, question, answer, turnedQuestion, setTurnedQuestion, s
         setQuestionsAnswered(questionsAnswered+1);
         setTurnedQuestion(0);
         setCardColor(color);
-        if(color == 'redAnswer') seticonName('icone_erro.png');
-        else if(color == 'yellowAnswer') seticonName('icone_quase.png');
-        else if(color == 'greenAnswer') seticonName('icone_certo.png');
+        
+        if(color == 'redAnswer'){
+            seticonName('icone_erro.png');
+            setOrderOfQuestions(orderOfQuestions => [...orderOfQuestions, 'icone_erro.png']);
+        }
+        else if(color == 'yellowAnswer'){
+            seticonName('icone_quase.png');
+            setOrderOfQuestions(orderOfQuestions => [...orderOfQuestions, 'icone_quase.png']);
+        }
+        else if(color == 'greenAnswer'){
+            seticonName('icone_certo.png');
+            setOrderOfQuestions(orderOfQuestions => [...orderOfQuestions, 'icone_certo.png']);
+        }
     }
     return (
         <>
