@@ -21,7 +21,7 @@ export const Container = styled.div`
     overflow-x: hidden;
     
     &::-webkit-scrollbar {
-        width: 12px;               /* width of the entire scrollbar */
+        width: 9px;               /* width of the entire scrollbar */
     }
     &::-webkit-scrollbar-track {
         background: #FB6B6E;        /* color of the tracking area */

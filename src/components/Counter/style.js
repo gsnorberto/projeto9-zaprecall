@@ -13,6 +13,7 @@ export const CounterArea = styled.div`
     font-family: 'Recursive';
     display: flex;
     flex-direction: column;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 `
 
 export const Description = styled.div`
