@@ -50,7 +50,7 @@ export const CardContent = styled.div`
 export const QuestionState = styled.div`
     position: relative;
     width: 80%;
-    height: 130px;
+    min-height: 130px;
     background-color: #FFFFD4;
     margin: 0 auto;
     display: flex;
@@ -65,6 +65,7 @@ export const QuestionState = styled.div`
         font-weight: 400;
         color: #333333;
         font-size: 18px;
+        margin-bottom: 25px;
     }
 
     img.button{
