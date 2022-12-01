@@ -12,7 +12,7 @@ export const InitialState = styled.div`
     border-radius: 5px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
     margin-bottom: 25px;
-    cursor: pointer;
+    
 
     .title{
         width: 80%;
@@ -37,6 +37,9 @@ export const InitialState = styled.div`
         color: #FF922E;
         text-decoration: line-through;
         cursor: default;
+    }
+    img{
+        cursor: pointer;
     }
 `
 

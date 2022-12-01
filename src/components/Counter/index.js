@@ -11,10 +11,20 @@ export default ({questionsAnswered, orderOfQuestions}) => {
         return true;
     }
 
+    function dataTestValue(icon){
+        if(icon == 'icone_erro.png'){
+            return 'no-icon'
+        } else if (icon == 'icone_quase.png'){
+            return 'partial-icon'
+        } else if (icon == 'icone_certo.png') {
+            return 'zap-icon'
+        }  
+    }
+
     return(
-        <CounterArea>
+        <CounterArea data-test="footer">
             {orderOfQuestions.length === cards.length &&
-                <Response>
+                <Response data-test="finish-text">
                     <Title>
                         <Icon src={message() ? './assets/img/party.png' : './assets/img/sad.png'} />
                         <Text>
@@ -32,7 +42,7 @@ export default ({questionsAnswered, orderOfQuestions}) => {
             {orderOfQuestions.length !== 0 && 
                 <ResponseIcons className="testando...">
                     {orderOfQuestions.map((icon, i) => (
-                        <Icons key={i} src={`./assets/img/${icon}`} />
+                        <Icons data-test={dataTestValue(icon)} key={i} src={`./assets/img/${icon}`} />
                     ))}
                 </ResponseIcons>
             }

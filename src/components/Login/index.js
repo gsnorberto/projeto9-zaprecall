@@ -5,7 +5,7 @@ export default ({setStartApplication}) => {
         <LoginArea>
             <Logo src="./assets/img/logo.png"/>
             <Title>ZapRecall</Title>
-            <Button onClick={() => setStartApplication(true)}>Iniciar Recall!</Button>
+            <Button data-test="start-btn" onClick={() => setStartApplication(true)}>Iniciar Recall!</Button>
         </LoginArea>
     )
 }
