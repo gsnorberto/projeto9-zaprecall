@@ -17,6 +17,7 @@ export const CounterArea = styled.div`
 `
 
 export const Description = styled.div`
+    margin-top: 12px;
     color: #333333;
     font-size: 18px;
     margin-bottom: 8px;
